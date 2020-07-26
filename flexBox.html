@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexBox{
+            width: 1000px;
+            height:400px ;
+            display: flex;
+            /* main axis 主轴方向 */
+            flex-direction: row;
+            /* 内容对齐的方向 */
+            justify-content: row;
+            /* 内容在高度上的对齐 */
+            align-items: center;
+            /* 是否换行 */
+            flex-wrap: wrap;
+            /* 每行的内容排列*/
+            align-content: space-between;
+            border:2px solid #333333;
+        }
+        .flexBox > div{
+            /* flex: 1; */
+            width: 104px;
+            height: 104px;
+            background-color: aqua;
+            margin:10px 10px;
+             /* 文字水平居中 */
+            text-align: center; 
+            /* 行高=div高度 */
+            line-height: 104px;
+        }
+        .first{
+            /* 每个的排列顺序 */
+            order: -2;
+        }
+        .end{
+            /* 单个排列 */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <!-- 学习的参考https://www.runoob.com/css3/css3-flexbox.html，CSDN论坛的一些帖子 -->
+    <div class="flexBox">
+        <div >1</div>
+        <div >2</div>
+        <div class='first'>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div>5</div>
+        <div class="end">5</div>
+    </div>
+</body>
+</html>
