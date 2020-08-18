@@ -1,0 +1,14 @@
+.thisCss{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+    /*absolute 是绝对定位，在使用的过程中绝对定位是使用的是候是释放原有的空间脱离文档流   */
+    /* position: absolute; */
+    /* position: relative; */
+    /* 保持展示的页面中在浏览器中的创久位置不变 */
+    position: fixed;
+
+    top: 100px;
+    z-index: 100px;
+}
